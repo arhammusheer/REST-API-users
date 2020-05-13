@@ -22,6 +22,14 @@ router.get('/', function(req, res, next) {
 router.get('/api', function(req, res, next){
   res.json({
     "message":"success"
+    "allowed paths":[
+      "GET - /api/users - show all users",
+      "GET - /api/users/generate-random - generate random user Faker.js",
+      "GET - /api/users/:id - Show users by ID",
+      "POST - /api/users - Create New users",
+      "DELETE - /api/users/:id - Delete user with given ID",
+      "PUT - /api/users/:id - Update User with given params"
+    ]
   });
 });
 
