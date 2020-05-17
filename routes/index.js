@@ -6,7 +6,7 @@ var faker = require('faker');
 const rateLimit = require("express-rate-limit");
 
 const generateuserLimiter = rateLimit({
-  windowMs: 1 * 60 * 1000, // 5 minutes
+  windowMs: 1 * 60 * 1000, // 1 minute
   max: 5,
   message:
     "Too many accounts created from this IP, please try again after 1 Minute"
